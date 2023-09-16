@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Booking</title>
+  <link rel="stylesheet" href="css/style-book.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- https://w3layouts.com/airline-booking-form-responsive-widget-template/ -->
+<div class="booking-form-w3layouts">
+		<!-- Form starts here -->
+		<form action="Thankyou.html" method="post">
+			<h2 class="sub-heading-agileits">Booking Details</h2>
+			<div class="main-flex-w3ls-sectns">
+				<div class="field-agileinfo-spc form-w3-agile-text1">
+					<select class="form-control">
+										<option>Hostel</option>
+										<option value="Tara Girls Hostel">Tara Girls Hostel</option>
+										<option value="Dr. B.A. Boys Hostel">Dr. B.A. Boys Hostel</option>
+										<option value="MGM Hostel">MGM Hostel</option>
+										<option value="Deogiri Boys Hostel">Deogiri Boys Hostel</option>
+										<option value="Tulsi Girls Hostel">Tulsi Girls Hostel</option>
+										<option value="Gaytri Girls Hostel">Gaytri Girls Hostel</option>
+										<option value="Vimalka Girls Hostel">Vimalka Girls Hostel</option>
+										<option value="Pande Boys Hostel">Pande Boys Hostel</option>
+									</select>
+				</div>
+				
+			</div>
+
+			<div class="radio-section">
+				<h6>Select your Room</h6>
+				<ul class="radio-buttons-w3-agileits">
+					<li>
+						<input type="radio" id="a-option" name="selector1">
+						<label for="a-option">One Bed</label>
+						<div class="check"></div>
+					</li>
+					<li>
+						<input type="radio" id="b-option" name="selector1">
+						<label for="b-option">Two Bed</label>
+						<div class="check">
+							<div class="inside"></div>
+						</div>
+					</li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+			<div class="main-flex-w3ls-sectns">
+				<div class="field-agileinfo-spc form-w3-agile-text1">
+					<input id="datepicker1" name="Text" type="text" placeholder="Meeting Date" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="" class="hasDatepicker">
+				</div>
+				<div class="field-agileinfo-spc form-w3-agile-text2">
+					<input type="text" id="timepicker1" name="Time" class="timepicker form-control hasWickedpicker" placeholder="Meeting Time" value="" onkeypress="return false;">
+				</div>
+			</div>
+			<div class="field-agileinfo-spc form-w3-agile-text">
+				<textarea name="Message" placeholder="Any Message..."></textarea>
+			</div>
+			<h3 class="sub-heading-agileits">Personal Details</h3>
+			<div class="main-flex-w3ls-sectns">
+				<div class="field-agileinfo-spc form-w3-agile-text1">
+					<input type="text" name="Name" placeholder="Full Name" required="">
+				</div>
+				<div class="field-agileinfo-spc form-w3-agile-text2">
+					<input type="text" name="Phone no" placeholder="Phone Number" required="">
+				</div>
+			</div>
+			<div class="field-agileinfo-spc form-w3-agile-text">
+				<input type="email" name="Email" placeholder="Email" required="">
+			</div>
+			<div class="clear"></div>
+			<input class="btn" type="submit" value="Submit">
+			<input type="reset" value="Clear Form">
+			<div class="clear"></div>
+		</form>
+		<!--// Form starts here -->
+	</div>
+<!-- partial -->
+  
+</body>
+</html>

@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Drs head -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="DRS is a website used for renting service. "/>
+    <link rel="stylesheet" href="font/stylesheet.css" media="screen" />
+    <link rel="stylesheet" href="css/style.css" media="screen" />
+    <title>DRS - Dynamic Renting System</title>
+<!-- Drs head end-->
+  </head>
+
+  <body>
+    <!-- Drs header --> 
+    <header class="header">
+        <div class="container">
+            <div class="navigation">
+            <!-- Box ui profile -->
+
+            <div class="nav-right-side">
+                <button class="mode-switch">
+                 <svg class="sun" fill="none" stroke="#fbb046" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-sun" viewBox="0 0 24 24"><defs/><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                 <svg class="moon" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-moon" viewBox="0 0 24 24"><defs/><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+                </button>
+                <button class="profile-btn">
+                  <span>Vishal Rajput</span>
+                  <img src="img/vishal.jpeg" alt="pp">
+                </button>
+              </div>
+
+              <div class="logo">DRS ~ Dynamic Renting System</div>
+              <img
+                src="img/nav-icon.svg"
+                class="nav-icon"
+                alt="navigation icon"
+                width="30"
+                height="30"
+              />
+              <ul>
+                <li>
+                  <a href="#home"> Home </a>
+                </li>
+                <li>
+                  <a href="#about"> About </a>
+                </li>
+                <li>
+                  <a href="#tours"> Rooms </a>
+                </li>
+       
+                <li>
+                  
+                </li>
+              </ul>
+            </div>
+          </div>
+    <!-- Drs header end --> 
+    </header>
+
+    <main>
+        <!-- SECTION HERO -->
+      <section class="section-hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="heading heading--1 margin-bottom">
+              EVERY MOMENT AND EVERY EVENT OF EVERY MAN'S LIFE ON EARTH PLANTS SOMETHING IN HIS SOUL.
+            </h1>
+            <button class="btn">Register Now!</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION SEARCH -->
+      <section class="section-search">
+        <div class="container search-box">
+          <div class="wrapper">
+            <h3>Area</h3>
+            <div class="custom-select">
+              <select>
+                <option value="awb">Aurangabad</option>
+                <option value="mumbai">Mumbai</option>
+                <option value="pune">Pune</option>
+                <option value="nagpur">Nagpur</option>
+              </select>
+              <span class="arrow"></span>
+            </div>
+          </div>
+
+          <div class="wrapper">
+            <h3>Date</h3>
+            <div class="custom-date">
+              <input type="date" id="date" />
+              <img src="./img/calendar.svg" alt="" class="calender-icon" />
+            </div>
+          </div>
+
+          <div class="wrapper">
+            <h3>Average Rent</h3>
+            <div class="custom-select">
+              <select>
+                <option value="₹1000">₹1000 - ₹2000</option>
+                <option value="₹2000">₹2000 - ₹3000</option>
+                <option value="₹3000">₹3000 and more..</option>
+              </select>
+              <span class="arrow"></span>
+            </div>
+          </div>
+          <button class="btn">Search</button>
+        </div>
+      </section>
+      <!-- SECTION ABOUT -->
+      <section class="section-about" id="about">
+        <div class="container about-box" data-aos="fade-up">
+          <div class="about-box__heading">
+            <h3 class="color-blue margin-bottom">About us</h3>
+            <div class="heading heading--1 capitalize">
+              "Book your perfect stay, with our Room Renting Service!"
+            </div>
+          </div>
+          <div class="about-box__content">
+            <p class="margin-bottom">Welcome to Dynamic Renting Service, your one-stop shop for worry-free renting solutions. We are a full-service rental company that specializes in providing quality, affordable, and reliable rentals. Our mission is to make renting easy, safe, and affordable for everyone.<br><br>At Dynamic Renting Service, we believe that everyone should have access to safe and affordable housing. We strive to provide our clients with an experience that is both comfortable and secure. Our team of experienced professionals are dedicated to providing you with the best possible service.
+          </div>
+        </div>
+      </section>
+
+    </main>
+        
+
+    <div class="app-container">
+    <!-- Box ui main-->
+    <section class="app-main">
+      <div class="app-main-left cards-area">
+        <div class="card-wrapper main-card">
+          <a class="card cardItemjs"  onclick="openModal()">
+            <div class="card-image-wrapper">
+            <img src="img/Hostels/Tara Hostel.png" alt="Tara Hostel">
+            </div>
+          
+            <div class="card-info">
+              <div class="card-text big cardText-js">Tara Girls Hostel</div>
+              <div class="card-text small">Beed Bypass Rd</div>
+              <div class="card-text small">
+                Starts from: 
+                <span class="card-price"> ₹1100</span>
+              </div>
+
+              <div class="card-Text small modal-info-desp" hidden="True">
+                <p>
+                  Tara Girls Hostel in Aurangabad is a safe and secure accommodation for female students and professionals. The hostel offers a comfortable and homely atmosphere for its residents. It is well-equipped with all the necessary amenities like Wi-Fi, laundry facilities, power back-up, water heater, and a kitchenette. The hostel has 24x7 security and CCTV surveillance to provide a safe and secure environment. It also provides a wide range of recreational activities to keep its guests entertained.
+                  <br>
+                  <Address> <b>Address:</b>Gate No, 1, Beed Bypass Rd, Satara Deolai Parisar, Aurangabad, Maharashtra 431010</Address>
+                  <br>
+                  contact number:  0240 237 5375
+                </p>
+              </div>
+              <div class="gmap" hidden="True"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d788.9254322839355!2d75.32213470511034!3d19.84913478905513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1670775068284!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div> 
+
+              
+            </div>
+            </a>
+        </div>
+         <div class="card-wrapper main-card">
+          <a class="card cardItemjs"  onclick="openModal()">
+            <div class="card-image-wrapper">
+            <img src="img/Hostels/Dr. B.A. Boys Hostel.png" alt="Dr. B.A Hostel" draggable="false">
+          </div>
+            <div class="card-info">
+              <div class="card-text big cardText-js">Dr. B.A. Boys Hostel</div>
+              <div class="card-text small">Himayat Bagh</div>
+              <div class="card-text small">
+                Starts from: 
+                <span class="card-price"> ₹1500</span>
+              </div>
+
+              <div class="card-Text small modal-info-desp" hidden="True">
+                <p>
+                  Dr. B.A Hostel in Aurangabad is a modern and well-equipped hostel that provides a comfortable stay for travelers and students. It is conveniently located in the heart of the city and offers a range of amenities, such as air-conditioned private rooms, Wi-Fi, laundry service, and an in-house restaurant. It also provides 24-hour security and CCTV surveillance for an added layer of protection. With its clean and hygienic environment, Dr. B.A Hostel is the perfect choice for a comfortable stay in Aurangabad.
+                  <br>
+                  <Address> <b>Address:</b>Himayat Bagh, Aurangabad, Maharashtra 431004</Address>
+                  <br>
+                  contact number: +91 7888233234
+                </p>
+              </div>
+              <div class="gmap" hidden="True"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15006.8451622483!2d75.30991867130658!3d19.89440932654082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdb981aa1b8702b%3A0x3966d84b9b37edce!2sDr.%20B.%20A.%20Government%20Boys%20Hostel!5e0!3m2!1sen!2sin!4v1670774687314!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div> 
+            </div>
+            </a>
+        </div>
+         <div class="card-wrapper main-card">
+          <a class="card cardItemjs"  onclick="openModal()">
+            <div class="card-image-wrapper">
+            <img src="img/Hostels/MGM Hostel.png" alt="Hotel" draggable="false">
+          </div>
+            <div class="card-info">
+              <div class="card-text big cardText-js">MGM Hostel</div>
+              <div class="card-text small">Baijipura</div>
+              <div class="card-text small">
+                Starts from: 
+                <span class="card-price"> ₹1300</span>
+              </div>
+
+              <div class="card-Text small modal-info-desp" hidden="True">
+                <p>
+                  MGM Hostel Aurangabad is a modern, comfortable and affordable accommodation option for travelers looking for a convenient stay in the city. The hostel offers a range of amenities, including free WiFi, laundry services, a fully-equipped kitchen, a common living area, and 24-hour security. The clean and spacious rooms are air-conditioned and come with private bathrooms for maximum comfort. Located in the heart of the city, the hostel is within easy reach of the city’s attractions, including the Ajanta and Ellora Caves, Bibi Ka Maqbara and Aurangabad Caves. Enjoy a hassle-free stay at MGM Hostel Aurangabad.
+                  <br>
+                  <Address> <b>Address:</b>V9J3+X34, MGM Rd, Baijipura, Indira Nagar, M G M, Aurangabad, Maharashtra 431003</Address>
+                  <br>
+                  contact number: +91 7888233234
+                </p>
+              </div>
+              <div class="gmap" hidden="True"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15007.984720835859!2d75.33466345541994!3d19.882383200000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdba392c853ec7d%3A0x391e68f95a5fad00!2sMaharashtra%20boys%20hostel!5e0!3m2!1sen!2sin!4v1670774369489!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div> 
+
+            </div>
+            </a>
+        </div>
+        <div class="card-wrapper main-card">
+          <a class="card cardItemjs"  onclick="openModal()">
+            <div class="card-image-wrapper">
+            <img src="img/Hostels/Deogiri Boys Hostel.png" alt="Hotel">
+          </div>
+            <div class="card-info">
+              <div class="card-text big cardText-js">Deogiri Boys Hostel</div>
+              <div class="card-text small">Baijipura</div>
+              <div class="card-text small">
+                Starts from: 
+                <span class="card-price"> ₹1200</span>
+              </div>
+
+              <div class="card-Text small modal-info-desp" hidden="True">
+                <p>
+                  Deogiri Boys Hostel in Aurangabad is a modern and comfortable accommodation option for students and young professionals. It offers spacious and well-furnished rooms, with private en-suite bathrooms and air-conditioning. The hostel also provides a range of amenities and services, including a shared kitchen and lounge area, a study room, laundry services, and Wi-Fi access. The hostel is within walking distance of the city's major attractions, and is a great choice for those looking for a convenient and affordable place to stay in Aurangabad.
+                  <br>
+                  <Address> <b>Address:</b>V9J3+X34, MGM Rd, Baijipura, Indira Nagar, M G M, Aurangabad, Maharashtra 431003</Address>
+                  <br>
+                  contact number: +91 7888233234
+                </p>
+                </div>
+                <div class="gmap" hidden="True"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.383690022632!2d75.31969347569706!3d19.866013926696052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdb993cda6d3a93%3A0x6a28181bfe550a61!2sDeogiri%20Boys%20Hostel!5e0!3m2!1sen!2sin!4v1670774085265!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div> 
+            </div>
+            </a>
+        </div>
+        <div class="card-wrapper main-card">
+          <a class="card cardItemjs"  onclick="openModal()">
+            <div class="card-image-wrapper">
+            <img src="img/Hostels/Tulsi Hostel.png" alt="Hotel">
+          </div>
+            <div class="card-info">
+              <div class="card-text big cardText-js">Tulsi Girls Hostel</div>
+              <div class="card-text small"> Pannalal Nagar</div>
+              <div class="card-text small">
+                Starts from: 
+                <span class="card-price"> ₹1700</span>
+              </div>
+
+              <div class="card-Text small modal-info-desp" hidden="True">
+                <p>
+                  Tulsi Girls Hostel in Aurangabad is a great choice for female students who are looking for a safe and comfortable place to stay. The hostel features a range of modern amenities, including single and double occupancy rooms, a spacious dining hall, and a fully-equipped gym. There is also a large common room where students can relax, study, and socialize. The hostel is located close to the city center, making it easy to access local attractions and amenities. Security is a top priority and there are 24-hour security guards on duty.
+                  <br>
+                  <Address> <b>Address:</b> Tulsi, 7, Pannalal Nagar, New Usmanpura, Aurangabad, Maharashtra 431005</Address>
+                  <br>
+                  contact number: +91 9421481309
+                </p>
+              </div>
+              <div class="gmap" hidden="True"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.288541101359!2d75.32980747569717!3d19.870034426565084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdb99ee44dcf957%3A0x9b4f81877abb7b62!2sTulsi%20Hills%20Girl&#39;s%20Hostel%2C%20Pannalal%20Nagar%2C%20Aurangabad!5e0!3m2!1sen!2sin!4v1670773749838!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            </div>
+            </a>
+        </div>
+        <div class="card-wrapper main-card">
+          <a class="card cardItemjs"  onclick="openModal()">
+            <div class="card-image-wrapper">
+            <img src="img/Hostels/Patil Boys Hostel.png" alt="Hotel">
+          </div>
+            <div class="card-info">
+              <div class="card-text big cardText-js">Patil Boys Hostel</div>
+              <div class="card-text small">Bhagwati Colony</div>
+              <div class="card-text small">
+                Starts from: 
+                <span class="card-price"> ₹1250</span>
+              </div>
+
+              <div class="card-Text small modal-info-desp" hidden="True">
+                <p>
+                  Patil Boys Hostel in Aurangabad provides safe and comfortable accommodation for students. The hostel has spacious, air-conditioned rooms with modern amenities such as Wi-Fi, television, refrigerator and 24-hour power backup. It also offers a well-stocked library, a gymnasium, a sports ground and recreational facilities. The hostel is also equipped with 24-hour security and CCTV surveillance for the safety of its residents. It is centrally located, close to all major educational institutions and other places of interest.
+                  <br>
+                  <Address> <b>Address:</b> Plot No 59 Yashraj, Bhagwati Colony, Jawahar Colony, Near Trimurti Chowk, Aurangabad, Jawahar Colony, Aurangabad-Maharashtra - 431001</Address>
+                  <br>
+                  contact number: +91 9421481309
+                </p>
+              </div>
+
+              <div class="gmap" hidden="True"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.3498190773157!2d75.34158857569716!3d19.867445226649316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdba3caeed538cd%3A0x5320f7a37e557d!2sPatil%20Boys%20Hostel!5e0!3m2!1sen!2sin!4v1670773827678!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+            </div>
+            </a>
+        </div>
+        <div class="card-wrapper main-card">
+          <a class="card cardItemjs"  onclick="openModal()">
+            <div class="card-image-wrapper">
+            <img src="img/Hostels/Gaytri Girls Hostel.png" alt="Hotel">
+          </div>
+            <div class="card-info">
+              <div class="card-text big cardText-js">Gaytri Girls Hostel</div>
+              <div class="card-text small">Kranti Chowk</div>
+              <div class="card-text small">
+                Starts from: 
+                <span class="card-price"> ₹1500</span>
+              </div>
+
+              <div class="card-Text small modal-info-desp" hidden="True">
+                <p>
+                  Gayatri Girls Hostel in Aurangabad provides safe and secure accommodation for women. The hostel is located in close proximity to educational institutions, hospitals, and other important places. It has well-furnished and spacious rooms with basic amenities like air-conditioning, attached bathroom, Wi-Fi, and CCTV surveillance. The hostel also provides a fully-equipped kitchen, a common dining area, a laundry service, and a study room. The staff is helpful and friendly, ensuring a comfortable stay for all its guests.
+                  <br>
+                  <Address> <b>Address:</b> Behind Swastik Medical Stores, Kranti Chowk, Aurangabad-Maharashtra - 431005, Behind Ellora Hotel</Address>
+                  <br>
+                  contact number: +91 7942601571
+                </p>
+              </div>
+
+              <div class="gmap" hidden="True"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.1414398544316!2d75.32491077569726!3d19.87624862636242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdb9934ba4edeaf%3A0x4bcb3844ccae782c!2sGaytri%20Girls&#39;Hostel.%20Aurangabad%20Maharashtra!5e0!3m2!1sen!2sin!4v1670767111190!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+            </div>
+            </a>
+        </div>
+        <div class="card-wrapper main-card">
+          <a class="card cardItemjs"  onclick="openModal()">
+            <div class="card-image-wrapper">
+            <img src="img/Hostels/Vimalka Girls Hostel.png" alt="Hotel">
+          </div>
+            <div class="card-info">
+              <div class="card-text big cardText-js">Vimalka Girls Hostel</div>
+              <div class="card-text small">Saijanya Nagar</div>
+              <div class="card-text small">
+                Starts from: 
+                <span class="card-price"> ₹1400</span>
+              </div>
+
+
+              <div class="card-Text small modal-info-desp" hidden="True">
+                <p>
+                  Vimalka Hostel in Aurangabad is a great choice for Students looking for a comfortable budget accommodation. Located in the heart of the city, the hostel is just a short walk away from the city's main attractions and landmarks. It offers spacious rooms, with modern amenities such as air conditioning and Wi-Fi, as well as a communal kitchen for guests to use. The hostel also features a garden and terrace, perfect for relaxing after a long day of sightseeing. Guests can take advantage of the convenient 24-hour front desk, as well as laundry and dry cleaning services. With its great location, comfortable amenities, and friendly staff, Vimalka Hostel is an ideal choice for every Student.
+                  <br>
+                  <Address> <b>Address:</b> Plot No.-3 Saijanya Nagar, Jalana Road, Balaji Nagar, Aurangabad-Maharashtra - 431001, Near Metro Rohan Hospital Opposite HP Petrol Pump</Address>
+                  <br>
+                  contact number: +91 7947169685
+                </p>
+              </div>
+
+              <div class="gmap" hidden="True"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.2402271084543!2d75.33418437569725!3d19.87207562649837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdb987765b4d0cb%3A0x1e3ac6c1b957881c!2sVimalka%20Girls%20Hostel!5e0!3m2!1sen!2sin!4v1670766774586!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+
+            </div>
+            </a>
+        </div>
+         <div class="card-wrapper main-card">
+          <a class="card cardItemjs"  onclick="openModal()">
+            <div class="card-image-wrapper">
+            <img src="img/Hostels/Pande Boys Hostel.png" alt="Hotel">
+          </div>
+            <div class="card-info">
+              <div class="card-text big cardText-js">Pande Boys Hostel </div>
+              <div class="card-text small">Shatri Nagar</div>
+              <div class="card-text small">
+                Starts from: 
+                <span class="card-price"> ₹1800</span>
+              </div>
+
+              <div class="card-Text small modal-info-desp" hidden="True">
+                <p>
+                  Pande Boys Hostel in Aurangabad is a modern and comfortable residence perfect for students and professionals alike. Located in the heart of the city, the hostel is near several shopping and dining options, as well as educational and recreational attractions. The hostel has a range of rooms and amenities, including single, double and dormitory-style rooms, all equipped with comfortable beds, desks, television sets, and ample storage space. Additionally, the hostel offers a common area with a seating area, a fully equipped kitchen, and laundry facilities. Guests will also have access to Wi-Fi, 24-hour security, and daily housekeeping services. Whether you’re looking for a place to study or just a place to relax, Pande Boys Hostel is the perfect place to stay.
+                  <br>
+                  <Address> <b>Address:</b> Safalya, 112 Shatri Nagar, Hedgewar Hospital Road, Jawahar Colony, Aurangabad-Maharashtra - 431001, Behind Headegewar Hospital, Opposite Kids Pride School</Address>
+                  <br>
+                  contact number: +91 9822808851
+                </p>
+
+              </div>
+
+              <div class="gmap" hidden="True"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.3178107398408!2d75.34436007569724!3d19.86879772660535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdba3c12be05279%3A0x2a453fc3dd319463!2sPande%20Boys%20Hostel!5e0!3m2!1sen!2sin!4v1670763843972!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      
+
+            </div>
+            </a>
+        </div>
+      </div>
+      <div class="app-main-right cards-area">
+        <div class="app-main-right-header">
+          <span>Latest Deals</span>
+          <a href="#">See More</a>
+        </div>
+        <div class="card-wrapper main-card">
+          <a class="card cardItemjs"  onclick="openModal()">
+            <div class="card-image-wrapper">
+            <img src="img/Hostels/Girija Girls Hostel.png">
+          </div>
+            <div class="card-info">
+              <div class="card-text big cardText-js">Girija Girls Hostel</div>
+              <div class="card-text small">Pannalal Nagar</div>
+              <div class="card-text small">
+                Starts from: 
+                <span  class="card-price"> ₹1000</span>
+              </div>
+
+              <div class="card-Text small modal-info-desp" hidden="True">
+                <p>
+                  Girija Girls Hostel in Aurangabad is a comfortable and convenient home away from home for young women. Located in the heart of the city, the hostel offers easy access to all its amenities. All rooms are well-maintained and equipped with modern amenities like air-conditioning, hot water, Wi-Fi, and laundry services. The hostel also has a cafeteria, a library, a gym, and a common room for recreational activities. The staff is friendly and helpful, providing a secure and comfortable stay. With its convenient location and modern facilities, Girija Girls Hostel is the perfect place for young women studying or working in Aurangabad.
+                  <br>
+                  <Address> <b>Address:</b> Plot No 9, Pannalal Nagar, New Osmanpura, Osmanpura, Aurangabad-Maharashtra - 431005</Address>
+                  <br>
+                  contact number: +91 9404526470
+                </p>
+
+              </div>
+
+              <div class="gmap" hidden="True"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.278292646237!2d75.32924267569709!3d19.870467426550853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdb99aba2c82297%3A0xd59485516d93abdb!2sGirija%20Girls%20Hostel!5e0!3m2!1sen!2sin!4v1670768214902!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+            </div>
+          </a>
+        </div>
+        <div class="card-wrapper main-card">
+          <a class="card cardItemjs"  onclick="openModal()">
+            <div class="card-image-wrapper">
+            <img src="img/Hostels/Nathleela Girls Hostel.png">
+          </div>
+            <div class="card-info">
+              <div class="card-text big cardText-js">Nathleela Girls Hostel</div>
+              <div class="card-text small">Jiveshwar Colony</div>
+              <div class="card-text small">
+                Starts from: 
+                <span  class="card-price"> ₹1300</span>
+              </div>
+
+              <div class="card-Text small modal-info-desp" hidden="True">
+                <p>
+                  Nathleela Girls Hostel in Aurangabad provides comfortable and convenient accommodation for women. Located in a safe and secure neighborhood, the hostel is just minutes away from the main city centre. It features spacious and well-furnished rooms, a common kitchen, a dining hall and a lounge area. Amenities include Wi-Fi, laundry services, housekeeping, 24-hour security, and CCTV surveillance. Whether you are a student, professional or traveler, Nathleela Girls Hostel is the perfect place to stay in Aurangabad.
+                  <Address> <b>Address:</b> Nathleela, Jiveshwar Colony, CIDCO N 8, aurangabad-maharashtra - 431003</Address>
+                  <br>
+                  contact number: +91 9423220516
+                </p>
+
+              </div>
+
+              <div class="gmap" hidden="True"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.7184396413368!2d75.35090917569767!3d19.894107625779746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdba33bd8d046ff%3A0xd5d541b3356e51e1!2sNathleela%2C%20Adhav%20Residency!5e0!3m2!1sen!2sin!4v1670770105718!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></iframe></div>
+
+            </div>
+          </a>
+        </div>
+        <div class="card-wrapper main-card">
+          <a class="card cardItemjs"  onclick="openModal()">
+            <div class="card-image-wrapper">
+            <img src="img/Hostels/Mapari Girls Hostel.png">
+          </div>
+            <div class="card-info">
+              <div class="card-text big cardText-js">Mapari Girls Hostel</div>
+              <div class="card-text small">Sahayadri Nagar</div>
+              <div class="card-text small">
+                Starts from: 
+                <span class="card-price"> ₹1400</span>
+              </div>
+
+              <div class="card-Text small modal-info-desp" hidden="True">
+                <p>
+                  Mapari Girls Hostel Aurangabad is a modern, secure, and comfortable hostel located in the heart of Aurangabad. It offers spacious and air-conditioned rooms with modern amenities to its guests. The hostel has a cafeteria and a terrace to relax and enjoy the view of the city. It also has a common room with a television, games, and Wi-Fi. All the rooms are equipped with private bathrooms and a study table. The hostel provides 24-hour security and laundry services. There is also a library and a study hall available. It is the perfect accommodation for students and working professionals.
+                  <br>
+                  <Address> <b>Address:</b> Sahayadri Nagar, CIDCO N 5, Aurangabad-Maharashtra - 431003</Address>
+                  <br>
+                  contact number: +91 9423220516
+                </p>
+
+              </div>
+
+              <div class="gmap" hidden="True"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15008.260425690072!2d75.33994694976964!3d19.87947254966502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdba296abecd777%3A0xe39797dbe51fc15d!2sBSPM%20Girl&#39;s%20Hostel!5e0!3m2!1sen!2sin!4v1670771144109!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            </div>
+            </a>
+        </div>
+         <div class="card-wrapper main-card">
+          <a class="card cardItemjs"  onclick="openModal()">
+            <div class="card-image-wrapper">
+            <img src="img/Hostels/shreeya Girls Hostel.png">
+          </div>
+            <div class="card-info">
+              <div class="card-text big cardText-js">Shreeya Girls Hostel </div>
+              <div class="card-text small">Venkatesh Nagar</div>
+              <div class="card-text small">
+                Starts from: 
+                <span class="card-price"> ₹1800</span>
+              </div>
+
+              <div class="card-Text small modal-info-desp" hidden="True">
+                <p>
+                  Shreeya Girls Hostel in Aurangabad is the perfect place for those looking for a safe, secure and comfortable stay in the city. Located in a prime area, the hostel offers modern amenities and an array of services. Every room is well-furnished with air-conditioning and attached bathrooms. The hostel also offers 24-hour security, power backup, laundry services, Wi-Fi, and much more. The hostel has a friendly and supportive staff and provides quality meals. It is the ideal choice for those looking for a home away from home.
+                  <br>
+                  <Address> <b>Address:</b> Near MGM, 51 Venkatesh Nagar behind totla hospital opp s f school, Jalna Road, aur, Aurangabad, Maharashtra 431003</Address>
+                  <br>
+                  contact number: +91 7038654411
+                </p>
+              </div>
+              <div class="gmap" hidden="True"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.0726036996707!2d75.3465643756974!3d19.879155926267497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdba2996f0eec0f%3A0xe4c1fc061771ea64!2sShreeya%20Girls%20Hostel!5e0!3m2!1sen!2sin!4v1670772040997!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+
+
+            </div>
+            </a>
+        </div>
+        <div class="card-wrapper main-card">
+          <a class="card cardItemjs"  onclick="openModal()">
+            <div class="card-image-wrapper">
+            <img src="img/Hostels/Sai boys hostel.png" alt="Hotel">
+          </div>
+            <div class="card-info">
+              <div class="card-text big cardText-js">Sai Boys Hostel</div>
+              <div class="card-text small">SutGirni Rd</div>
+              <div class="card-text small">
+                Starts from: 
+                <span class="card-price"> ₹900</span>
+              </div>
+
+              <div class="card-Text small modal-info-desp" hidden="True">
+                <p>
+                  Sai Boys Hostel in Aurangabad is a modern and comfortable hostel offering an ideal place for students, professionals and travelers. Located in the heart of the city, the hostel is close to all the major attractions and offers easy access to public transport. The hostel has spacious and comfortable rooms, along with an array of amenities such as 24-hour hot water, laundry services and a common kitchen. There is also a common lounge area and a library for guests to relax and enjoy their stay. The hostel staff is friendly and helpful, ensuring a pleasant stay.
+                  <br>
+                  <Address> <b>Address:</b> V86H+2XG, SutGirni Rd, State Bank Colony, New Usmanpura, Aurangabad, Maharashtra 431005</Address>
+                  <br>
+                  contact number: +91 8088546612
+                </p>
+              </div>
+              <div class="gmap" hidden="True"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.5245867586323!2d75.32739097569693!3d19.860058926890055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdb987d51f1e0e7%3A0xf4f6536a8013499d!2ssai%20hostel!5e0!3m2!1sen!2sin!4v1670772577394!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+            </div>
+            </a>
+        </div>
+         <div class="card-wrapper main-card">
+          <a class="card cardItemjs"  onclick="openModal()">
+            <div class="card-image-wrapper">
+            <img src="img/Hostels/Deshmukh Hostel.png" alt="Hotel">
+          </div>
+            <div class="card-info">
+              <div class="card-text big cardText-js">Deshmukh Hostel</div>
+              <div class="card-text small">Shivajyoti Housing Society</div>
+              <div class="card-text small">
+                Starts from: 
+                <span class="card-price"> ₹1500</span>
+              </div>
+
+              <div class="card-Text small modal-info-desp" hidden="True">
+                <p>
+                  Deshmukh Hostel Aurangabad is a cozy and comfortable stay for students and travelers alike. Located in the heart of the city, the hostel is close to all the essential amenities and attractions. The hostel offers a range of modern facilities such as a swimming pool, fitness center, reading corner, and 24-hour security. The rooms are clean, spacious, and well-furnished with comfortable beds and mattresses. The hostel also serves delicious home-cooked meals at an affordable cost. Guests can also enjoy a variety of activities such as games room and table tennis. With its warm hospitality and convenient location, Deshmukh Hostel Aurangabad is the ideal place for a comfortable and relaxed stay.
+                  <br>
+                  <Address> <b>Address:</b> 18 Shivajyoti Housing Society, Cidco N 6, Aurangabad-Maharashtra - 431003</Address>
+                  <br>
+                  contact number: +91  9923350303
+                </p>
+              </div>
+
+              <div class="gmap" hidden="True"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6310.160332795376!2d75.35409839935397!3d19.88037307964293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdba29617ad952b%3A0xdb0596a277f4ba3a!2sN-6%2C%20Cidco%2C%20Aurangabad%2C%20Maharashtra%20431003!5e0!3m2!1sen!2sin!4v1670773078197!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+            </div>
+            </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  
+
+<!-- Drs Part 2 -->
+
+<!-- SECTION OFFER -->
+<section class="section-offer" id="offers">
+  <div class="container offer-box">
+    <div class="offer-box__percentage" data-aos="zoom-in">DRS</div>
+    <div class="offer-box__content" data-aos="fade-up">
+      <h2 class="heading heading--2">
+        Special Offer there will be no security deposit for new users this month.
+      </h2>
+      <p>
+
+      </p>
+      <button class="btn">book Now</button>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION REVIEW -->
+<section class="section-review">
+  <div class="container review-box" data-aos="fade-up">
+    <header class="review-header">
+      <h3 class="color-blue">Our Reviews</h3>
+      <h2 class="heading heading--2">What the people say about us</h2>
+    </header>
+
+    <article class="review-cards">
+      <div class="r-card">
+        <img
+          src="img/vishal.jpeg"
+          alt=""
+          class="r-card__img"
+          width="90"
+          height="90"
+        />
+        <div class="r-card__name">Vishal Rajput</div>
+        
+        <div class="r-card__description">
+I recently stayed at the Shivaji Hostel and it was a great experience. The staff was friendly and helpful, the rooms were clean and comfortable, and the common areas had plenty of activities to choose from. The amenities were top notch and included a full kitchen, laundry facilities, and even a swimming pool. The location was great too - close to public transportation and plenty of restaurants and shops. Overall, I had a great experience and would definitely recommend the DRS to anyone looking for a comfortable place to stay.
+        </div>
+        <div class="r-card__rating">
+          <img
+            src="img/star-grp.svg"
+            alt="star"
+            width="100"
+            height="30"
+          />
+        </div>
+      </div>
+
+      <div class="r-card">
+        <img
+          src="img/vaishnav.jpeg"
+          alt=""
+          class="r-card__img"
+          width="90"
+          height="90"
+        />
+        <div class="r-card__name">Vaishnav Patange</div>
+    
+        <div class="r-card__description">
+          Hostel rooms are amazing! The beds are comfortable and the staff is friendly. The only downside is that they are not very well-maintained, so there are a few areas that need attention. Overall, it's a great place to stay! I would recommend DRS to anyone who is looking for rooms or hostel.
+        </div>
+        <div class="r-card__rating">
+          <img
+            src="img/star-grp.svg"
+            alt="star"
+            width="100"
+            height="30"
+          />
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+</main>
+
+<!-- SECTION FOOTER -->
+<footer class="section-footer">
+<div class="footer-box container">
+  <div class="contact-details">
+    <h2 class="heading heading--2 margin-bottom">DRS</h2>
+    <ul class="contact-data">
+      <li class="location">MIT College, Beed Bypass, Aurangabad, Maharashtra.</li>
+      <li class="phone">+91 97660 67145</li>
+      <li class="email">vishal.rajput@mit.asia</li>
+      <li class="social">
+        <img
+          src="./img/logo-whatsapp.svg"
+          alt="whatsapp icon"
+          width="35"
+          height="35"
+        />
+
+        <img
+          src="./img/logo-facebook.svg"
+          alt="facebook icon"
+          width="35"
+          height="35"
+        />
+
+        <img
+          src="./img/logo-instagram.svg"
+          alt="instagram icon"
+          width="35"
+          height="35"
+        />
+
+        <img
+          src="./img/logo-twitter.svg"
+          alt="twitter icon"
+          width="35"
+          height="35"
+        />
+      </li>
+    </ul>
+  </div>
+
+  <nav class="footer-nav" aria-label="navigation">
+    <div class="nav-name">Quick Links</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#tours">Rooms</a></li>
+      <li><a href="#offers">Offeres</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <nav class="footer-nav" aria-label="navigation">
+    <div class="nav-name">Popular Destination</div>
+    <ul>
+      <li><a href="#tours">Aurangabad</a></li>
+      <li><a href="#tours">Mumbai</a></li>
+      <li><a href="#tours">Pune</a></li>
+      <li><a href="#tours">Nagpur</a></li>
+    </ul>
+  </nav>
+
+  <div class="newsletter">
+    <div class="newsletter__title">News Letter</div>
+    <div class="newsletter__text">
+Send us your valuable feedback!
+    </div>
+    <form class="newsletter__input">
+      <input type="text" placeholder="example@mit.asia" />
+      <img
+        src="./img/send.svg"
+        alt="send icon"
+        class="send-icon"
+        width="36"
+        height="36"
+      />
+    </form>
+  </div>
+
+
+</div>
+</footer>
+
+
+
+<!-- Box ui hide-->
+<div id="modal-window" class="shadow">
+  <div class="main-modal">
+    <div class="modal-left">
+      <div class="modal-image-wrapper">
+        <img src="">
+      </div>
+      <div class="modal-info-header">
+        <div class="left-side">
+          <h1 class="modalHeader-js"></h1>
+          <p>Stockton Street</p>
+        </div>
+        <div class="right-side">
+          Starts from:
+          <span class="amount">$1000</span>
+        </div>
+      </div>
+      <div class="info-bar">
+        <div class="info-wrapper">
+          <div class="info-icon">
+            <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+          </div>
+          <span>2 Bedrooms</span>
+        </div>
+        <div class="info-wrapper">
+          <div class="info-icon">
+            <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-wind"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"/></svg>
+          </div>
+          <span>2 Bathrooms</span>
+        </div>
+        <div class="info-wrapper">
+          <div class="info-icon">
+            <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-square"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/></svg>
+          </div>
+          <span>1250m2</span>
+        </div>
+        <div class="info-wrapper">
+          <div class="info-icon">
+            <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shield"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <span>Highly Secured</span>
+        </div>
+      </div>
+      <br>
+      <div class="desc-wrapper">
+        <h1>Description</h1>
+        <div class="desp">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </p>
+        </div>
+        <div class="modal-gmap"></div>
+        <div class="desc-actions">
+          <form action="booking.html">
+          <button class="btn-book">Book Now</button>
+        </form>
+          <div class="add-favourite">
+            <input type="checkbox" id="favourite">
+            <label for="favourite">
+              <span class="favourite-icon">
+                <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>  
+                </span>
+              <span>Add to favourites</span>
+            </label>
+          </div>
+        </div>
+      </div>
+      </div>
+     <div class="modal-right">
+       <div class="app-main-right-header">
+        <span>Reviews</span>
+        <a href="#app-main">See All</a>
+      </div>
+       <div class="card-wrapper">
+         <div class="card">
+           <div class="profile-info-wrapper">
+             <div class="profile-img-wrapper">
+               <img src="img/kedar.jpg" alt="Review">
+             </div>
+             <p>Kedar Paralkar</p>
+           </div>
+           <p>"I recently stayed at this hostel and it was great! The staff was incredibly friendly and accommodating. The facilities were clean and well-maintained. I would highly recommend this hostel to anyone looking for a budget-friendly stay."</p>
+         </div>
+      </div>
+       <div class="card-wrapper">
+         <div class="card">
+           <div class="profile-info-wrapper">
+             <div class="profile-img-wrapper">
+               <img src="https://source.unsplash.com/featured/1200x900/?woman,latina" alt="Review">
+             </div>
+             <p>Ritesh Tamboli</p>
+           </div>
+           <p>I just stayed at this hostel and it was a great experience. The rooms were spacious and clean, the staff was friendly and helpful, and the amenities were great. Highly recommend! </p>
+         </div>
+      </div>
+       <div class="card-wrapper">
+         <div class="card">
+           <div class="profile-info-wrapper">
+             <div class="profile-img-wrapper">
+               <img src="img/shiva.jpg" alt="Review">
+             </div>
+             <p>Shivnarayan Telangare</p>
+           </div>
+           <p> I had a great time staying at this hostel. The rooms were cozy and the staff was very friendly. I would definitely stay here again.</p>
+         </div>
+      </div>
+       <div class="card-wrapper">
+         <div class="card">
+           <div class="profile-info-wrapper">
+             <div class="profile-img-wrapper">
+               <img src="img/pawan.jpg" alt="Review">
+             </div>
+             <p>Pawan Shahane</p>
+           </div>
+           <p>This hostel was a great place to stay. The rooms were comfortable and the staff was very helpful. I would stay here again in a heartbeat.</p>
+         </div>
+      </div>
+       <div class="card-wrapper">
+         <div class="card">
+           <div class="profile-info-wrapper">
+             <div class="profile-img-wrapper">
+               <img src="img/aaqeeb.jpeg" alt="Review">
+             </div>
+             <p>Aaqeeb Pinjari</p>
+           </div>
+           <p>This hostel was amazing. The staff was very friendly, the amenities were top-notch, and the rooms were very clean. Highly recommend!</p>
+         </div>
+      </div>
+       <div class="card-wrapper">
+         <div class="card">
+           <div class="profile-info-wrapper">
+             <div class="profile-img-wrapper">
+               <img src="img/Labhesh.jpeg" alt="Review">
+             </div>
+             <p>Labhesh Bhurewal</p>
+           </div>
+           <p>I had a great time staying at this hostel. The rooms were spacious and clean, the staff was friendly and helpful, and the amenities were great. Highly recommend!</p>
+         </div>
+      </div>
+       <div class="card-wrapper">
+         <div class="card">
+           <div class="profile-info-wrapper">
+             <div class="profile-img-wrapper">
+               <img src="https://source.unsplash.com/featured/1200x900/?woman,modern" alt="Review">
+             </div>
+             <p>Dil tuta aashiq</p>
+           </div>
+           <p>This hostel was awesome! The rooms were clean and the amenities were great. The staff was also really friendly and helpful.</p>
+         </div>
+      </div>
+
+     </div>
+    <button class="btn btn-close" onclick="closeM()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    </div>    
+  </div>
+<script> 
+  let ini= document.querySelector('#modal-window');
+  ini.classList.add("hideModal");
+</script>
+
+
+<script src="scripts/script.js" ></script>
+
+  </body>
